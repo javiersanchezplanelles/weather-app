@@ -1,17 +1,12 @@
 import { LanguageList } from "../../i18n/language.constants"
-import { useTranslation } from "react-i18next"
 import "./header.container.styles.scss"
-import { CityList } from "../../domain/cities/cities.constants"
-import { useWeather } from "../../hooks/useWeather"
+import i18n from "../../i18n/config"
 
-export const HeaderContainer = () => {
-  const { getWeatherData } = useWeather()
-  const { i18n } = useTranslation()
-  const handleLanguage = (language: string) => {
-    i18n.changeLanguage(language)
-    getWeatherData(CityList[0], i18n.language)
-  }
+interface Props {
+  onHandleClick: (language: string) => void
+}
 
+export const HeaderContainer = ({ onHandleClick }: Props) => {
   return (
     <header className="header-container">
       {LanguageList.map((language) => (
@@ -22,7 +17,7 @@ export const HeaderContainer = () => {
               : ""
           }
           key={language.name}
-          onClick={() => handleLanguage(language.code)}
+          onClick={() => onHandleClick(language.code)}
         >
           <img
             src={

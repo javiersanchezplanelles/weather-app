@@ -75,12 +75,14 @@ export const WeatherCurrentComponent = ({ weather }: Props) => {
               {weather.current_temp}
               <div className="degrees">ºC</div>
             </div>
-            <div className="date-time">
-              <p className="date">
-                {formatDay(date!.day)},
-                <span className="time">{date!.time}</span>
-              </p>
-            </div>
+            {date && (
+              <div className="date-time">
+                <p className="date">
+                  {formatDay(date.day)},
+                  <span className="time">{date.time}</span>
+                </p>
+              </div>
+            )}
             <hr></hr>
             <p>{weather.description}</p>
           </div>
