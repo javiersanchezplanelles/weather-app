@@ -18,3 +18,6 @@ The application has been built using:
  - react-hook-form to build the form.
  - typescript to type the variables, data, etc. 
  - i18n library to handle translations.
+
+## To-do list
+ - Improve test coverage.
