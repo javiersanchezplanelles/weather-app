@@ -1,4 +1,4 @@
 export const APP_ROUTES = {
-  DASHBOARD: "/dashboard",
+  DASHBOARD: "/",
   CONTACT_FORM: "/contact-us",
 }
