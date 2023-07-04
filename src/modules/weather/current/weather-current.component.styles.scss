@@ -31,6 +31,10 @@
 }
 
 .weather-data-container__current__main {
+	display: flex;
+    flex-direction: column;
+    justify-content: center;
+	align-items: center;
 	padding: 30px;
 	text-align: left;
 
@@ -98,6 +102,10 @@
 		color: gray;
 		font-weight: normal;
 	}
+
+	@media screen and (max-width: 1040px) {
+		width: 60%;
+	  }
 }
 
 .weather-data-container-current__humidity {
