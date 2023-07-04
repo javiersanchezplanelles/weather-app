@@ -1,0 +1,140 @@
+:root {
+    --cardValueFontsize: 24px;
+}
+
+.weather-data-container__current__description {
+	display: flex;
+	justify-content: center;
+
+	img {
+		width: 100px;
+		height: 100px;
+	}
+}
+
+.weather-data-container__current__temperature {
+  display: flex;
+	flex-direction: row;
+	font-size: 44px;
+	margin: 0;
+
+	.degrees {
+		font-size: 30px;
+	}
+}
+
+.weather-data-container__current {
+  display: flex;
+	background-color: white;
+	margin: 50px;
+	border-radius: 30px;
+}
+
+.weather-data-container__current__main {
+	padding: 30px;
+	text-align: left;
+
+	hr {
+		border: 1px solid #F5F5F5;
+	}
+	
+}
+
+.weather-data-container__current__highlights {
+	background-color: #F5F5F5;
+	border-radius: 0 30px 30px 0;
+	width: 100%;
+}
+
+.weather-data-container_current__highlights__header {
+	text-align: left;
+	font-size: 20px;
+	font-weight: 500;
+	margin: 20px 0px 10px 30px;
+}
+
+  
+.weather-data-container_current__highlights__body {
+	display: flex;
+  
+	img {
+		width: 30px;
+		height: 30px;
+	}
+
+	p {
+		font-weight: bold;
+		color: black;
+	}
+
+	.title {
+		color: #778899;
+	}
+
+  @media screen and (max-width: 1040px) {
+    flex-direction: column;
+  }
+}
+
+.weather-data_container__current_card {
+	background-color: white;
+	border-radius: 20px;
+	padding: 10px;
+	margin: 10px 30px 20px 30px;
+	width: 30%;
+	max-width: 500px;
+
+	.weather-data-container__max__min_temperatures {
+		.weather-data-container_temperature {
+			display: flex;
+			flex-direction: row;
+			justify-content: center;
+			align-items: center;	
+			font-size: 18px;		
+		}
+	}
+
+	.title {
+		color: gray;
+		font-weight: normal;
+	}
+}
+
+.weather-data-container-current__humidity {
+	.value {
+		p { 
+			font-size: var(--cardValueFontsize);
+		}
+	}
+
+	.descrption {
+		font-weight: normal;
+	}
+}
+
+.weather-data-container__current__wind {
+	p { 
+		font-size: var(--cardValueFontsize);
+	}
+}
+
+.weather-data-container__current__city {
+	font-size: var(--cardValueFontsize);
+	padding-top: 20px;
+	font-weight: 700;
+	margin: 0 0 30px 0;
+	text-align: center;
+}
+
+.date-time{
+	display: flex;
+	flex-direction: row;
+
+	.date {
+		margin-right: 5px;
+	}
+
+	.time {
+		color: gray;
+	}
+}
