@@ -16,3 +16,4 @@ The application has been built using:
  - scss to style the components.
  - react-hook-form to build the form.
  - typescript to type the variables, data, etc. 
+ - i18n library to handle translations.
