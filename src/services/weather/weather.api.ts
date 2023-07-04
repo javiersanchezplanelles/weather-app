@@ -1,6 +1,6 @@
 import { ForecastWeather } from "../../domain/weather/weather.interface"
 
-const API_KEY = "a7555020811464e4894b7df64a450950"
+const API_KEY = "f7d4e294a58be4d1b4a6c9e36e6f19bb"
 
 export const getWeather = async (location: string, language?: string) => {
   const response = await Promise.all([
