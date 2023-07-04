@@ -1,0 +1,29 @@
+{
+  "CONTACT_FORM": {
+    "CITY": "City",
+    "DATE_OF_BIRTH": "Date of birth",
+    "EMAIL": "Email",
+    "NAME": "Name",
+    "SEND_BUTTON": "Send"
+  },
+  "FORECAST_WEATHER": {
+    "HEADER": "Forecast"
+  },
+  "SIDEBAR": {
+    "CITY_LIST": {
+      "LONDON": "London",
+      "SIDNEY": "Sidney",
+      "VALENCIA": "Valencia"
+    },
+    "CONTACT_BUTTON": "Contact us"
+  },
+  "WEATHER": {
+    "HEADER": "Today's highlights",
+    "HUMIDITY": "Humidity",
+    "TEMPERATURE": {
+      "CURRENT": "Now it's ",
+      "MAX_MIN": "Max & min temperatures"
+    },
+    "WIND": "Wind"
+  }
+}
