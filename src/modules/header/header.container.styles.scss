@@ -1,0 +1,22 @@
+.header-container {
+	padding: 24px;
+	grid-area: h;
+	text-align: end;
+
+	button {
+		margin-right: 8px;
+	}
+
+	button:hover {
+		opacity: 0.5;
+		transition: opacity 0.3s;
+	}
+
+	img {
+		transform: scale(0.5)
+	}
+	
+  .header-container__button--selected {
+    border-bottom: 3px solid #055099;
+  }
+}
