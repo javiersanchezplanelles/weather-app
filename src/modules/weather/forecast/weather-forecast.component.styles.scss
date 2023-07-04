@@ -1,0 +1,28 @@
+.weather-data-container__forecast {
+	display: flex;
+	justify-content: space-evenly;
+
+	@media screen and (max-width: 1040px) {
+		flex-direction: column;
+	  }
+}
+
+.weather-data-container__forecast__header {
+	text-align: left;
+	margin: 20px 0px 10px 30px;
+}
+
+.weather-data-container__forecast__description {
+	@media screen and (max-width: 1040px) {
+		border-bottom: 1px solid #000;
+	  }
+}
+
+.weather-data-container__forecast__description__temperature {
+	font-weight: 700;
+	font-size: 20px;
+
+	span {
+		font-size: 14px;
+	}
+}
