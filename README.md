@@ -8,6 +8,7 @@ Run `npm install` to install all dependencies.
 ## Starting the application
 
 Run `npm start` to start the application on your localhost.
+Warning: you should use your own openweathermap's API key and set it in `weather.api.ts`.
 
 ## Information
 
